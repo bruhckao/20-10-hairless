@@ -20,7 +20,6 @@
     <div class="nav-links">
       <a href="#story">Câu chuyện</a>
       <a href="#moments">Khung hình</a>
-      <a href="#questions">Đôi điều</a>
       <a href="#thank-you">Lời cảm ơn</a>
     </div>
     <div class="nav-actions">
@@ -33,7 +32,6 @@
     <div class="mobile-menu" id="mobileMenu">
       <a href="#story">Câu chuyện</a>
       <a href="#moments">Khung hình</a>
-      <a href="#questions">Đôi điều</a>
       <a href="#thank-you">Lời cảm ơn</a>
     </div>
   </nav>
@@ -72,12 +70,12 @@
         </div>
 
         <h1 class="reveal-up" id="heroHeadline">Một món quà nhỏ<br>gửi <em>Diệu Ánh.</em></h1>
-        <p class="hero-copy-text reveal-up" id="heroCopyText">Nhân ngày 20/10, một chút bình yên và dịu dàng gửi riêng cậu — mong cậu luôn vui vẻ, rạng ngời và luôn cảm thấy được yêu thương.</p>
+        <p class="hero-copy-text reveal-up" id="heroCopyText">Nhân ngày 20/10, t chúc Ánh ngày càng xinh đẹp, đẳng cấp, ít stress, siêu giàu. Chúc Ánh luôn vui vẻ, rạng ngời luôn luôn hạnh phúc trong cuộc sống he</p>
         <a class="arrow-cta reveal-up" href="#story">Bắt đầu câu chuyện <span aria-hidden="true">→</span></a>
       </div>
       <div class="hero-visual reveal-up">
         <div class="hero-media">
-          <img id="heroImage" src="assets/photos/cat-bouquet.jpg" alt="Mèo nhỏ ôm bó hoa" fetchpriority="high" decoding="async">
+          <img id="heroImage" src="assets/photos/dieu-anh/dieu-anh-1.jpg" alt="Ảnh của Diệu Ánh" fetchpriority="high" decoding="async">
         </div>
         <div class="hero-badge" aria-hidden="true">
           <strong>20</strong>
@@ -91,7 +89,7 @@
       <div class="section-inner">
         <div class="section-head reveal-up">
           <p class="eyebrow">The Gift</p>
-          <h2 id="storyTitle">Ba điều nhỏ,<br>gói trong <em>một món quà.</em></h2>
+          <h2 id="storyTitle">Hai điều nhỏ,<br>gói trong <em>một món quà.</em></h2>
         </div>
         <div class="service-grid reveal-up">
           <article class="service-card">
@@ -107,13 +105,6 @@
             </div>
             <h3>Khung hình</h3>
             <p>Vài khoảnh khắc được giữ lại, để cậu có thể ngắm lâu hơn một chút.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M40 25c0 7-7 12-16 12-2 0-4 0-6-1L8 40l3-8c-2-2-3-5-3-8 0-7 7-12 16-12s16 5 16 13z"/><path d="M17 24h.01M24 24h.01M31 24h.01"/></svg>
-            </div>
-            <h3>Đôi điều</h3>
-            <p>Năm câu hỏi nhỏ, không bắt buộc. Chỉ để cậu kể nếu muốn, theo cách của riêng mình.</p>
           </article>
         </div>
       </div>
@@ -202,50 +193,20 @@
       </div>
     </section>
 
-    <section class="section questions" id="questions" aria-labelledby="questionsTitle">
-      <div class="section-inner questions-inner">
-        <div class="questions-head reveal-up">
-          <div>
-            <p class="eyebrow">A Few Questions</p>
-            <h2 id="questionsTitle">Năm câu hỏi nhỏ,<br><em>nếu cậu muốn kể.</em></h2>
-          </div>
-          <p class="section-copy">Không có đáp án đúng sai. Cậu có thể trả lời, bỏ qua, hoặc quay lại bất cứ lúc nào. Những gì cậu viết chỉ ở lại trong trang này.</p>
-        </div>
-        <div class="question-card reveal-up">
-          <div class="question-top">
-            <p class="question-progress" id="questionProgress">Câu 1/5</p>
-            <div class="question-meter" aria-hidden="true"><span id="questionMeter"></span></div>
-          </div>
-          <div class="question-body" id="questionBody">
-            <h3 class="question-text" id="questionText" aria-live="polite">Nếu có một ngày hoàn toàn dành cho bản thân, cậu sẽ muốn trải qua ngày đó như thế nào?</h3>
-            <label class="sr-only" for="questionAnswer">Câu trả lời của cậu</label>
-            <textarea class="question-answer" id="questionAnswer" rows="4" aria-describedby="questionNote" placeholder="Viết một chút, nếu cậu muốn..."></textarea>
-          </div>
-          <div class="question-actions">
-            <button class="btn-primary" type="button" id="nextBtn">Tiếp tục <span aria-hidden="true">→</span></button>
-            <button class="btn-ghost" type="button" id="skipBtn">Bỏ qua</button>
-            <button class="btn-back" type="button" id="backBtn" hidden>Quay lại</button>
-          </div>
-          <p class="question-note" id="questionNote">Không bắt buộc trả lời. Không có gì được gửi đi.</p>
-        </div>
-      </div>
-    </section>
-
     <section class="section thank-you ending" id="thank-you" aria-labelledby="thankYouTitle">
       <canvas class="ending-rain" id="endingPetalCanvas" aria-hidden="true"></canvas>
       <div class="ending-stage" id="endingStage">
         <div class="ending-particles" id="endingParticles" aria-hidden="true"></div>
 
         <article class="letter-card ending-letter" id="endingLetter">
-          <p class="eyebrow" id="letterEyebrow">A Note For You</p>
-          <h2 id="thankYouTitle" tabindex="-1">Gửi Diệu Ánh,<br><em>người bạn thật dịu dàng.</em></h2>
+          <p class="eyebrow" id="letterEyebrow">A Note For Diệu Ánh</p>
+          <h2 id="thankYouTitle" tabindex="-1">Gửi Diệu Ánh,<br><em>người bạn tuyệt vời.</em></h2>
           <div class="letter-body" id="letterBody">
-            <p>Cảm ơn cậu đã luôn là một người bạn tuyệt vời, chu đáo và đem lại cảm giác bình yên cho mọi người xung quanh.</p>
-            <p>Có những lời chúc không cần phải thật cầu kỳ để trở nên chân thành. Nhân ngày 20/10, chúc cậu luôn có thật nhiều niềm vui, giữ được sự dịu dàng và nhiệt thành của riêng mình.</p>
-            <p>Mong những ngày sắp tới sẽ mang đến cho cậu nhiều điều tốt đẹp, những người tử tế và thật nhiều lý do để mỉm cười.</p>
-            <p class="letter-emphasis">Món quà nhỏ này tuy giản dị nhưng chứa đầy sự chân thành gửi đến cậu.</p>
+            <p>Cảm ơn Ánh đã luôn là một người bạn tuyệt vời, chu đáo và đem lại cảm giác bình yên cho mọi người xung quanh.</p>
+            <p>Có những lời chúc không cần quá khoa trương, chỉ mong cậu biết rằng sự hiện diện của cậu luôn rất quý giá nè, nên là đừng có suy nghĩ tiêu cực(nếu có...) he.</p>
+            <p class="letter-emphasis">Nhân ngày 20/10, chúc Diệu Ánh luôn an yên, mạnh mẽ khi cần và dịu dàng khi muốn. Mong tương lai sẽ dịu dàng nâng niu mọi ước mơ của Ánh.</p>
           </div>
-          <p class="letter-sign" id="letterSign">Một lời chúc nhỏ, <span>gửi riêng Diệu Ánh.</span></p>
+          <p class="letter-sign" id="letterSign">gửi riêng cho <span>Diệu Ánh.</span></p>
           <div class="ending-letter-actions">
             <button class="btn-primary ending-continue" id="endingContinue" type="button">Đi đến món quà nhỏ <span aria-hidden="true">→</span></button>
           </div>
@@ -306,7 +267,6 @@
           <h4>Mục lục</h4>
           <a href="#story">Câu chuyện</a>
           <a href="#moments">Khung hình</a>
-          <a href="#questions">Đôi điều</a>
           <a href="#thank-you">Lời cảm ơn</a>
         </div>
         <div class="footer-col">
@@ -325,7 +285,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 A Little Gift</span>
-      <span>Những câu trả lời chỉ ở lại trong trang này.</span>
+      <span>Gửi tặng những người bạn thân tuyệt vời.</span>
     </div>
   </footer>
 

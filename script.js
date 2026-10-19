@@ -259,123 +259,22 @@ document.addEventListener('keydown', event => {
   }
 });
 
-// Five optional questions. Answers live in memory only.
-const questionTexts = [
-  'Nếu có một ngày hoàn toàn rảnh rỗi không vướng bận gì, cậu muốn tụi mình kéo nhau đi đâu chơi nhất?',
-  'Món ăn hay quán ruột nào mà chỉ cần ai đó hú một tiếng là cậu sẵn sàng phi ra ngay không cần nghĩ?',
-  'Những lúc gặp chuyện bực mình hay áp lực, cậu thích có bạn bè ở bên tám chuyện xả stress hay muốn yên tĩnh một mình?',
-  'Kỷ niệm nào hoặc trò dở hơi nào của tụi mình từ trước đến nay làm cậu nhớ nhất mỗi khi nghĩ lại?',
-  'Nhân ngày 20/10, cậu có điều gì muốn nhắn nhủ hay mong ước gì cho bản thân và tình bạn của chúng mình không?'
-];
+const restartBtn = document.getElementById('restartBtn');
+if (restartBtn) {
+  restartBtn.addEventListener('click', () => {
+    resetEnding();
 
-const questionText = document.getElementById('questionText');
-const questionAnswer = document.getElementById('questionAnswer');
-const questionProgress = document.getElementById('questionProgress');
-const questionMeter = document.getElementById('questionMeter');
-const questionBody = document.getElementById('questionBody');
-const nextBtn = document.getElementById('nextBtn');
-const skipBtn = document.getElementById('skipBtn');
-const backBtn = document.getElementById('backBtn');
+    const brand = document.querySelector('.nav .brand');
+    if (brand) {
+      window.setTimeout(() => brand.focus({ preventScroll: true }), 0);
+    }
 
-const answers = Array(questionTexts.length).fill('');
-let questionIndex = 0;
-let isChangingQuestion = false;
-
-function updateQuestionView({ focus = false } = {}) {
-  questionText.textContent = questionTexts[questionIndex];
-  questionAnswer.value = answers[questionIndex];
-  questionProgress.textContent = `Câu ${questionIndex + 1}/${questionTexts.length}`;
-  questionMeter.style.width = `${((questionIndex + 1) / questionTexts.length) * 100}%`;
-  backBtn.hidden = questionIndex === 0;
-
-  if (focus) {
-    questionAnswer.focus({ preventScroll: true });
-  }
-}
-
-function showUpdatedQuestion() {
-  updateQuestionView({ focus: true });
-  questionBody.classList.remove('is-changing');
-  isChangingQuestion = false;
-}
-
-function changeQuestion(direction) {
-  if (isChangingQuestion) return;
-
-  const nextIndex = questionIndex + direction;
-  if (nextIndex < 0 || nextIndex >= questionTexts.length) return;
-
-  answers[questionIndex] = questionAnswer.value;
-  questionIndex = nextIndex;
-
-  if (reduceMotion.matches) {
-    showUpdatedQuestion();
-    return;
-  }
-
-  isChangingQuestion = true;
-  questionBody.classList.add('is-changing');
-  window.setTimeout(showUpdatedQuestion, 360);
-}
-
-function finishQuestions() {
-  answers[questionIndex] = questionAnswer.value;
-
-  const thankYou = document.getElementById('thank-you');
-  const thankYouTitle = document.getElementById('thankYouTitle');
-  if (!thankYou) return;
-
-  thankYou.scrollIntoView({
-    behavior: reduceMotion.matches ? 'auto' : 'smooth',
-    block: 'start'
+    window.scrollTo({
+      top: 0,
+      behavior: reduceMotion.matches ? 'auto' : 'smooth'
+    });
   });
-
-  if (thankYouTitle) {
-    window.setTimeout(() => {
-      thankYouTitle.focus({ preventScroll: true });
-    }, reduceMotion.matches ? 0 : 450);
-  }
 }
-
-function goForward() {
-  if (isChangingQuestion) return;
-
-  answers[questionIndex] = questionAnswer.value;
-
-  if (questionIndex === questionTexts.length - 1) {
-    finishQuestions();
-  } else {
-    changeQuestion(1);
-  }
-}
-
-questionAnswer.addEventListener('input', () => {
-  answers[questionIndex] = questionAnswer.value;
-});
-
-nextBtn.addEventListener('click', goForward);
-skipBtn.addEventListener('click', goForward);
-backBtn.addEventListener('click', () => changeQuestion(-1));
-
-document.getElementById('restartBtn').addEventListener('click', () => {
-  questionIndex = 0;
-  isChangingQuestion = false;
-  questionBody.classList.remove('is-changing');
-  updateQuestionView();
-  resetEnding();
-
-  const brand = document.querySelector('.nav .brand');
-  if (brand) {
-    window.setTimeout(() => brand.focus({ preventScroll: true }), 0);
-  }
-
-  window.scrollTo({
-    top: 0,
-    behavior: reduceMotion.matches ? 'auto' : 'smooth'
-  });
-});
-
-updateQuestionView();
 
 // Cinematic gallery — A Rain of Petals & Wishes.
 const cinema = document.getElementById('petalCinema');
@@ -1493,6 +1392,9 @@ function buildBouquetPetals() {
   bouquetPetals.replaceChildren();
 
   const imagePositions = {
+    'dieu-anh-1.jpg': '50% 35%',
+    'dieu-anh-2.jpg': '50% 25%',
+    'dieu-anh-3.jpg': '50% 40%',
     'teacher-flowers.jpg': '50% 22%',
     'green-dress.jpg': '50% 27%',
     'boat.jpg': '50% 28%',
@@ -1675,38 +1577,37 @@ const FRIENDS_DATA = {
     icon: '🌸',
     eyebrow: 'A Small Gift · 20.10',
     headline: 'Một món quà nhỏ<br>gửi <em>Diệu Ánh.</em>',
-    heroText: 'Nhân ngày 20/10, một chút bình yên và dịu dàng gửi riêng cậu — mong cậu luôn vui vẻ, rạng ngời và luôn cảm thấy được yêu thương.',
+    heroText: 'Nhân ngày 20/10, t chúc Ánh ngày càng xinh đẹp, đẳng cấp, ít stress, siêu giàu. Chúc Ánh luôn vui vẻ, rạng ngời luôn luôn hạnh phúc trong cuộc sống he',
     heroCaption: 'Một chút dịu dàng,<br>gửi riêng Diệu Ánh.',
-    heroImage: 'assets/photos/cat-bouquet.jpg',
+    heroImage: 'assets/photos/dieu-anh/dieu-anh-1.jpg',
     bloomCenter: 'Diệu Ánh<br><small>20.10</small>',
-    letterTitle: 'Gửi Diệu Ánh,<br><em>người bạn thật dịu dàng.</em>',
+    letterTitle: 'Gửi Diệu Ánh,<br><em>người bạn tuyệt vời.</em>',
     letterParagraphs: [
-      'Cảm ơn cậu đã luôn là một người bạn tuyệt vời, chu đáo và đem lại cảm giác bình yên cho mọi người xung quanh.',
-      'Có những lời chúc không cần quá khoa trương, chỉ mong cậu biết rằng sự hiện diện của cậu luôn rất quý giá với chúng mình.',
-      'Nhân ngày 20/10, chúc Diệu Ánh luôn an yên, mạnh mẽ khi cần và dịu dàng khi muốn. Mong tương lai sẽ dịu dàng nâng niu mọi ước mơ của cậu.',
-      'Món quà nhỏ này tuy giản dị nhưng chứa đầy sự chân thành gửi đến cậu.'
+      'Cảm ơn Ánh đã luôn là một người bạn tuyệt vời, chu đáo và đem lại cảm giác bình yên cho mọi người xung quanh.',
+      'Có những lời chúc không cần quá khoa trương, chỉ mong cậu biết rằng sự hiện diện của cậu luôn rất quý giá nè, nên là đừng có suy nghĩ tiêu cực(nếu có...) he.',
+      'Nhân ngày 20/10, chúc Diệu Ánh luôn an yên, mạnh mẽ khi cần và dịu dàng khi muốn. Mong tương lai sẽ dịu dàng nâng niu mọi ước mơ của Ánh.'
     ],
-    letterSign: 'Một lời chúc nhỏ, <span>gửi riêng Diệu Ánh.</span>',
+    letterSign: 'gửi riêng cho <span>Diệu Ánh.</span>',
     finalWish: 'Chúc Diệu Ánh một ngày 20/10 thật ấm áp,<br>luôn mỉm cười và hạnh phúc mỗi ngày.',
     signature: '— Gửi tặng người bạn đáng mến Diệu Ánh —',
     cinemaFinalTitle: 'Chúc Diệu Ánh ngày 20/10<br>thật dịu dàng & vui vẻ!',
     cinemaFinalCopy: 'Mong cậu luôn rạng rỡ, bình yên và có thật nhiều điều ngọt ngào chờ đón phía trước.',
     cinemaWishes: [
       'Chúc Diệu Ánh ngày 20/10 thật dịu dàng, bình yên và ngập tràn niềm vui.',
-      'Mong cậu lúc nào cũng giữ được nụ cười trong trẻo và ánh mắt rạng rỡ như thế.',
-      'Chúc những điều ngọt ngào và chân thành nhất sẽ luôn tìm đến với cậu.',
+      'Mong Ánh lúc nào cũng giữ được nụ cười trong trẻo và ánh mắt rạng rỡ như thế.',
+      'Chúc những điều ngọt ngào và chân thành nhất sẽ luôn tìm đến với Ánh.',
       'Mong mỗi sáng thức dậy cậu đều thấy lòng nhẹ nhõm, mỗi ngày trôi qua đều có điều làm cậu mỉm cười.',
-      'Chúc Diệu Ánh luôn tự tin, luôn được trân trọng và hạnh phúc theo cách của riêng mình.',
-      'Mong những áp lực, mệt mỏi sẽ qua thật nhanh, chỉ có niềm vui ở lại cùng cậu.',
-      'Cảm ơn Diệu Ánh vì luôn là một người bạn thật dịu dàng và ấm áp.',
-      'Chúc cậu một ngày 20/10 thật đặc biệt, được nhận thật nhiều yêu thương và những món quà bất ngờ.'
+      'Chúc Diệu Ánh ngày càng xinh đẹp, đẳng cấp, ít stress, siêu giàu!',
+      'Mong những áp lực, mệt mỏi sẽ qua thật nhanh, chỉ có niềm vui ở lại cùng Ánh.',
+      'Cảm ơn Diệu Ánh vì luôn là một người bạn thật chu đáo và ấm áp he.',
+      'Chúc Ánh luôn vui vẻ, rạng ngời luôn luôn hạnh phúc trong cuộc sống!'
     ],
     photos: [
-      { src: 'assets/photos/cat-bouquet.jpg', alt: 'Mèo nhỏ ôm bó hoa', caption: 'Một bó hoa tặng Diệu Ánh' },
-      { src: 'assets/photos/green-dress.jpg', alt: 'Khung hình xanh', caption: 'Nụ cười trong trẻo' },
-      { src: 'assets/photos/boat.jpg', alt: 'Bên hồ bình yên', caption: 'Một chút nắng, một chút bình yên' },
-      { src: 'assets/photos/teacher-flowers.jpg', alt: 'Rạng rỡ 20/10', caption: 'Khoảnh khắc rạng rỡ' },
-      { src: 'assets/photos/rabbit-feeding.jpg', alt: 'Khoảnh khắc an yên', caption: 'Cùng những điều dịu dàng' }
+      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh che miệng cười', caption: 'Một chút đáng yêu' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-2.jpg', alt: 'Diệu Ánh áo xanh', caption: 'Khoảnh khắc rạng ngời' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-3.jpg', alt: 'Diệu Ánh selfie', caption: 'Góc cận đáng yêu' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh nụ cười xinh', caption: 'Nụ cười tỏa nắng' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-2.jpg', alt: 'Diệu Ánh 20/10', caption: 'Chúc Ánh luôn vui he' }
     ]
   },
   'trang-nhung': {
