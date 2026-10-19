@@ -1398,6 +1398,10 @@ function buildBouquetPetals() {
     'khanh-ngoc-1.jpg': '50% 30%',
     'khanh-ngoc-2.jpg': '50% 30%',
     'khanh-ngoc-3.jpg': '50% 45%',
+    'trang-nhung-1.jpg': '50% 45%',
+    'trang-nhung-2.jpg': '50% 35%',
+    'trang-nhung-3.jpg': '50% 40%',
+    'thai-viet-1.jpg': '50% 30%',
     'teacher-flowers.jpg': '50% 22%',
     'green-dress.jpg': '50% 27%',
     'boat.jpg': '50% 28%',
@@ -1618,40 +1622,38 @@ const FRIENDS_DATA = {
     name: 'Nguyễn Trang Nhung',
     shortName: 'Trang Nhung',
     icon: '🎭',
-    eyebrow: 'Special Edition · 20.10',
-    headline: 'Món quà "bất ổn"<br>gửi <em>Trang Nhung.</em>',
-    heroText: '20/10 không chúc sến súa vì sợ nổi da gà. Chúc đồng chí Trang Nhung nhân phẩm vô cực, ví dày cộm và bớt làm khổ bạn bè!',
-    heroCaption: 'Bớt báo đời lại,<br>sớm giàu bao tao!',
-    heroImage: 'assets/photos/rabbit-feeding.jpg',
-    bloomCenter: 'Nhung Báo<br><small>20.10</small>',
-    letterTitle: 'Gửi Trang Nhung,<br><em>đồng chí bạn thân "báo thủ".</em>',
+    eyebrow: 'Happy 20.10 · Trang Nhung',
+    headline: 'Một món quà nhỏ<br>gửi <em>Trang Nhung.</em>',
+    heroText: 'Chúc Nhung 20/10 vui vẻ. Con bò học giỏi măm học bổng full xong cho t là đẹp, chúc m đcap xinh gái, nhiều tiền, t hết văn r....',
+    heroCaption: 'Con bò măm học bổng,<br>sớm bao tao nhé!',
+    heroImage: 'assets/photos/trang-nhung/trang-nhung-1.jpg',
+    bloomCenter: 'Trang Nhung<br><small>20.10</small>',
+    letterTitle: 'Gửi Trang Nhung,<br><em>con bò măm học bổng.</em>',
     letterParagraphs: [
-      'Tao định viết thư cảm động rơi nước mắt nhưng nghĩ lại mặt mày khi đọc chắc cười sặc sụa nên thôi.',
-      'Cảm ơn vì đã luôn là cái cây hài chất lượng cao của cả nhóm, người luôn cùng tao bày đủ trò con bò và chịu đựng cái tính ẩm ương của nhau.',
-      '20/10 chúc đồng chí Nhung luôn rực rỡ, bớt quạu, thi đâu đậu đó, làm đâu trúng đó và sớm ngày phát tài để dắt tao đi ăn cả thế giới.',
-      'Nhớ là dù có chuyện gì thì hội bạn này vẫn luôn ở đây để hóng hớt và cà khịa mày mỗi ngày!'
+      'đcm hóa ra ngày xưa m cũng ơ ri, dừ t cũng v, 1h sáng kh biết viết mẹ chi.',
+      'Chúc m măm học bổng kh trượt kì mô, đạt được kì vọng, có ước mơ chi hoàn thành hết, chúc nail luôn đẹp..',
+      'Chúc đường tình duyên oce',
+      'hết cmnr...'
     ],
-    letterSign: 'Một lời chúc lầy lội, <span>gửi đồng chí Nhung.</span>',
-    finalWish: 'Chúc Trang Nhung 20/10 cười rớt hàm,<br>ví luôn đầy tiền và bớt báo lại nha!',
-    signature: '— Người bạn thân chịu đựng mày suốt năm tháng —',
-    cinemaFinalTitle: 'Chúc Trang Nhung 20/10<br>bớt báo & sớm thành phú bà!',
-    cinemaFinalCopy: 'Ăn bao nhiêu cũng không béo, thức tới 3h sáng da vẫn căng mọng không một hột mụn!',
+    letterSign: 'gửi <span>Nhung.</span>',
+    finalWish: 'Chúc Trang Nhung 20/10 vui vẻ,<br>học bổng măm full, nail đẹp & tình duyên oce!',
+    signature: '— Gửi con bò Trang Nhung —',
+    cinemaFinalTitle: 'Chúc Trang Nhung 20/10<br>măm học bổng full & xinh gái đcap!',
+    cinemaFinalCopy: 'Học bổng không trượt kì mô, ước mơ hoàn thành hết, nail luôn đẹp và tình duyên luôn oce!',
     cinemaWishes: [
-      'Chúc Nhung ngày 20/10 bớt báo, bớt ngủ nướng và bớt trễ hẹn giùm cái!',
-      'Chúc bồ tiền vào như nước sông Đà, tiền ra nhỏ giọt như cà phê phin.',
-      'Ăn bao nhiêu cũng không béo, thức đến 3h sáng da dẻ vẫn mịn màng không một hột mụn.',
-      'Chúc sớm thành phú bà, trúng số độc đắc rồi nhớ ai là bạn thân nhất mà bao ăn nhé!',
-      'Chúc 10 anh theo đuổi, nhưng nhớ chọn anh nào giàu và biết bao cả nhóm bạn thân đi ăn.',
-      'Mong deadline tự động biến mất, bài tập tự động xong, chỉ việc ngồi rung đùi đếm tiền.',
-      'Tình bạn chúng mình như keo 502, dù mày có khùng cỡ nào thì tao vẫn phải chịu đựng thôi!',
-      'Chúc mày luôn giữ được nụ cười vô tri và độ lầy lội đỉnh cao này nhé Trang Nhung!'
+      'Chúc Nhung 20/10 vui vẻ. Con bò học giỏi măm học bổng full!',
+      'Chúc m đcap xinh gái, nhiều tiền, t hết văn r....',
+      'đcm hóa ra ngày xưa m cũng ơ ri, dừ t cũng v, 1h sáng kh biết viết mẹ chi.',
+      'Chúc m măm học bổng kh trượt kì mô, đạt được kì vọng, ước mơ chi hoàn thành hết!',
+      'Chúc nail luôn đẹp, chúc đường tình duyên oce!',
+      'Hết cmnr... gửi Nhung!'
     ],
     photos: [
-      { src: 'assets/photos/rabbit-feeding.jpg', alt: 'Trang Nhung cho thỏ ăn', caption: 'Khoảnh khắc bớt báo đời' },
-      { src: 'assets/photos/cat-bouquet.jpg', alt: 'Mèo và hoa', caption: 'Mèo xinh nhưng không bằng ai đó' },
-      { src: 'assets/photos/boat.jpg', alt: 'Bên hồ', caption: 'Lúc chưa quậy phá' },
-      { src: 'assets/photos/green-dress.jpg', alt: 'Lên đồ sống ảo', caption: 'Lên đồ chụp ảnh sống ảo' },
-      { src: 'assets/photos/teacher-flowers.jpg', alt: 'Hoa 20/10', caption: '20/10 bớt làm khổ bạn bè' }
+      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung góc rộng cực lầy', caption: 'Con bò măm học bổng' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-2.jpg', alt: 'Trang Nhung đeo kính xinh gái', caption: 'Xinh gái đcap vjp pro' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-3.jpg', alt: 'Trang Nhung ảnh hồi nhỏ', caption: 'Hóa ra ngày xưa m cũng ơ ri' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung selfie', caption: '1h sáng hết cmn văn' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-2.jpg', alt: 'Trang Nhung 20/10', caption: 'Chúc Nhung 20/10 vui vẻ' }
     ]
   },
   'khanh-ngoc': {
@@ -1703,7 +1705,7 @@ const FRIENDS_DATA = {
     headline: '20/10 vui tới bến<br>gửi <em>Thái Việt.</em>',
     heroText: 'Dù ngày 20/10 hay bất kỳ ngày nào, chúc Thái Việt luôn vui vẻ, bớt áp lực, phong độ ngời ngời và vạn sự hanh thông!',
     heroCaption: 'Chúc đồng chí Việt<br>ngày nào cũng đỉnh!',
-    heroImage: 'assets/photos/boat.jpg',
+    heroImage: 'assets/photos/thai-viet/thai-viet-1.jpg',
     bloomCenter: 'Thái Việt<br><small>20.10</small>',
     letterTitle: 'Gửi Thái Việt,<br><em>người bạn chiến hữu của tôi.</em>',
     letterParagraphs: [
@@ -1728,11 +1730,11 @@ const FRIENDS_DATA = {
       'Hôm nay cứ việc chill, nạp năng lượng và tận hưởng ngày thật trọn vẹn nhé!'
     ],
     photos: [
-      { src: 'assets/photos/boat.jpg', alt: 'Thái Việt', caption: 'Phong độ ngời ngời' },
-      { src: 'assets/photos/teacher-flowers.jpg', alt: 'Khoảnh khắc kỷ niệm', caption: 'Đồng chí chiến hữu' },
-      { src: 'assets/photos/green-dress.jpg', alt: 'Bình yên', caption: 'Một ngày thảnh thơi' },
-      { src: 'assets/photos/rabbit-feeding.jpg', alt: 'Thư giãn', caption: 'Không vướng bận deadline' },
-      { src: 'assets/photos/cat-bouquet.jpg', alt: 'Mèo và hoa', caption: 'Chúc mừng 20/10' }
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt', caption: 'Phong độ ngời ngời' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt mỉm cười', caption: 'Đồng chí chiến hữu' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thảnh thơi', caption: 'Một ngày thảnh thơi' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thư giãn', caption: 'Không vướng bận deadline' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt 20/10', caption: 'Chúc mừng 20/10' }
     ]
   },
   'hoi-ban-than': {
@@ -1767,11 +1769,11 @@ const FRIENDS_DATA = {
       'Chúc ngày 20/10 thật ý nghĩa cho tất cả những người bạn thân yêu nhất!'
     ],
     photos: [
-      { src: 'assets/photos/cat-bouquet.jpg', alt: 'Hội bạn thân', caption: 'Tình bạn chúng mình' },
-      { src: 'assets/photos/teacher-flowers.jpg', alt: 'Khoảnh khắc đẹp', caption: 'Kỷ niệm khó quên' },
-      { src: 'assets/photos/green-dress.jpg', alt: 'Bình yên', caption: 'Những ngày thảnh thơi' },
-      { src: 'assets/photos/boat.jpg', alt: 'Bên hồ', caption: 'Một chút nắng đẹp' },
-      { src: 'assets/photos/rabbit-feeding.jpg', alt: 'Niềm vui', caption: 'Nụ cười của chúng mình' }
+      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh', caption: 'Diệu Ánh dịu dàng' },
+      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Khánh Ngọc', caption: 'Khánh Ngọc - Ngật Đòng' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung', caption: 'Trang Nhung lầy lội' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Thái Việt', caption: 'Thái Việt phong độ' },
+      { src: 'assets/photos/cat-bouquet.jpg', alt: 'Cả nhóm', caption: 'Hội bạn thân mãi keo' }
     ]
   }
 };
