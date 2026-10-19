@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fdf8f3">
+  <meta name="description" content="Một món quà nhỏ cho ngày 20/10 gửi tặng những người bạn thân — Hồ Thị Diệu Ánh, Nguyễn Khánh Ngọc, Nguyễn Trang Nhung, Hoàng Thái Việt.">
+  <title>A Little Gift · 20.10 — Gửi Bạn Thân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300..900&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <nav class="nav" aria-label="Điều hướng chính">
+    <a class="brand" href="#hero">A Little Gift<span class="brand-dot">.</span></a>
+    <div class="nav-links">
+      <a href="#story">Câu chuyện</a>
+      <a href="#moments">Khung hình</a>
+      <a href="#questions">Đôi điều</a>
+      <a href="#thank-you">Lời cảm ơn</a>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-cta" href="#story">Mở món quà</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Mở menu điều hướng">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#story">Câu chuyện</a>
+      <a href="#moments">Khung hình</a>
+      <a href="#questions">Đôi điều</a>
+      <a href="#thank-you">Lời cảm ơn</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Mở đầu">
+      <div class="hero-copy">
+        <p class="eyebrow reveal-up" id="heroEyebrow">A Small Gift · 20.10</p>
+
+        <!-- Thanh chọn bạn thân -->
+        <div class="friend-selector-section reveal-up">
+          <span class="friend-selector-label">Món quà gửi đến:</span>
+          <div class="friend-tabs" role="tablist" aria-label="Chọn bạn thân">
+            <button class="friend-tab is-active" data-friend="dieu-anh" type="button" role="tab" aria-selected="true">
+              <span class="friend-tab-icon">🌸</span> Diệu Ánh
+            </button>
+            <button class="friend-tab" data-friend="khanh-ngoc" type="button" role="tab" aria-selected="false">
+              <span class="friend-tab-icon">✨</span> Khánh Ngọc
+            </button>
+            <button class="friend-tab" data-friend="trang-nhung" type="button" role="tab" aria-selected="false">
+              <span class="friend-tab-icon">🎭</span> Trang Nhung
+            </button>
+            <button class="friend-tab" data-friend="thai-viet" type="button" role="tab" aria-selected="false">
+              <span class="friend-tab-icon">🚀</span> Thái Việt
+            </button>
+            <button class="friend-tab" data-friend="hoi-ban-than" type="button" role="tab" aria-selected="false">
+              <span class="friend-tab-icon">💖</span> Cả nhóm
+            </button>
+          </div>
+          <div class="friend-share-wrap">
+            <button class="friend-share-btn" id="shareFriendBtn" type="button" title="Sao chép đường link gửi riêng cho bạn">
+              <span>🔗</span> Sao chép link gửi cho <strong id="shareFriendName">Diệu Ánh</strong>
+            </button>
+            <span class="friend-share-toast" id="shareToast">✓ Đã sao chép link riêng!</span>
+          </div>
+        </div>
+
+        <h1 class="reveal-up" id="heroHeadline">Một món quà nhỏ<br>gửi <em>Diệu Ánh.</em></h1>
+        <p class="hero-copy-text reveal-up" id="heroCopyText">Nhân ngày 20/10, một chút bình yên và dịu dàng gửi riêng cậu — mong cậu luôn vui vẻ, rạng ngời và luôn cảm thấy được yêu thương.</p>
+        <a class="arrow-cta reveal-up" href="#story">Bắt đầu câu chuyện <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-visual reveal-up">
+        <div class="hero-media">
+          <img id="heroImage" src="assets/photos/cat-bouquet.jpg" alt="Mèo nhỏ ôm bó hoa" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero-badge" aria-hidden="true">
+          <strong>20</strong>
+          <span>Tháng 10</span>
+        </div>
+        <p class="hero-caption" id="heroCaption">Một chút dịu dàng,<br>gửi riêng Diệu Ánh.</p>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="storyTitle">
+      <div class="section-inner">
+        <div class="section-head reveal-up">
+          <p class="eyebrow">The Gift</p>
+          <h2 id="storyTitle">Ba điều nhỏ,<br>gói trong <em>một món quà.</em></h2>
+        </div>
+        <div class="service-grid reveal-up">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 5v38M5 24h38M10.5 10.5l27 27M37.5 10.5l-27 27"/></svg>
+            </div>
+            <h3>Lời nhắn</h3>
+            <p>Một lá thư ngắn, viết riêng cho ngày 20/10. Không cần quá cầu kỳ, chỉ cần chân thành.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="30" rx="2"/><path d="M6 31l10-9 8 7 7-6 11 9"/><circle cx="35" cy="18" r="3"/></svg>
+            </div>
+            <h3>Khung hình</h3>
+            <p>Vài khoảnh khắc được giữ lại, để cậu có thể ngắm lâu hơn một chút.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M40 25c0 7-7 12-16 12-2 0-4 0-6-1L8 40l3-8c-2-2-3-5-3-8 0-7 7-12 16-12s16 5 16 13z"/><path d="M17 24h.01M24 24h.01M31 24h.01"/></svg>
+            </div>
+            <h3>Đôi điều</h3>
+            <p>Năm câu hỏi nhỏ, không bắt buộc. Chỉ để cậu kể nếu muốn, theo cách của riêng mình.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section moments" id="moments" aria-labelledby="momentsTitle">
+      <div class="section-inner">
+        <div class="section-head reveal-up">
+          <div>
+            <p class="eyebrow">A Few Frames</p>
+            <h2 id="momentsTitle">Vài khung hình,<br><em>đáng để ngắm lâu hơn.</em></h2>
+          </div>
+          <p class="section-copy">Chạm vào từng tấm ảnh để xem lớn hơn.</p>
+        </div>
+
+        <button class="cinema-invite reveal-up" id="openCinema" type="button" aria-label="Chạm vào bông hồng để bắt đầu A Rain of Petals and Wishes">
+          <span class="cinema-invite-rose" aria-hidden="true">
+            <span class="cinema-invite-glow"></span>
+            <svg class="rose-svg" viewBox="0 0 220 340" aria-hidden="true"><use href="#cinemaRoseSymbol"></use></svg>
+          </span>
+          <span class="cinema-invite-copy">
+            <span class="cinema-invite-eyebrow">A Rain of Petals &amp; Wishes</span>
+            <span class="cinema-invite-title">Chạm vào bông hoa nhé…</span>
+            <span class="cinema-invite-text">Một cơn mưa cánh hoa, vài khung hình và những lời chúc nhỏ đang chờ cậu.</span>
+          </span>
+          <span class="cinema-invite-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="portfolio-item reveal-up">
+            <button class="portfolio-media" type="button" data-caption="Một khung hình xanh dịu dàng." aria-label="Xem ảnh: Một khung hình xanh">
+              <img src="assets/photos/green-dress.jpg" alt="Ảnh trong khung hoa xanh" loading="lazy" decoding="async">
+              <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
+            </button>
+            <div class="portfolio-meta">
+              <p class="portfolio-category">Frame 01</p>
+              <h3 class="portfolio-title">Một khung hình xanh</h3>
+              <p class="portfolio-tags"><span>Green dress</span><span>Dịu dàng</span></p>
+            </div>
+          </article>
+          <article class="portfolio-item reveal-up">
+            <button class="portfolio-media" type="button" data-caption="Một chút nắng, một chút bình yên." aria-label="Xem ảnh: Một chút nắng">
+              <img src="assets/photos/boat.jpg" alt="Ảnh bên hồ với nón lá" loading="lazy" decoding="async">
+              <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
+            </button>
+            <div class="portfolio-meta">
+              <p class="portfolio-category">Frame 02</p>
+              <h3 class="portfolio-title">Một chút nắng</h3>
+              <p class="portfolio-tags"><span>Boat</span><span>Bình yên</span></p>
+            </div>
+          </article>
+          <article class="portfolio-item reveal-up">
+            <button class="portfolio-media" type="button" data-caption="Một người bạn nhỏ, một bó hoa nhỏ." aria-label="Xem ảnh: Một người bạn nhỏ">
+              <img src="assets/photos/cat-bouquet.jpg" alt="Mèo nhỏ ôm bó hoa" loading="lazy" decoding="async">
+              <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
+            </button>
+            <div class="portfolio-meta">
+              <p class="portfolio-category">Frame 03</p>
+              <h3 class="portfolio-title">Một người bạn nhỏ</h3>
+              <p class="portfolio-tags"><span>Cat</span><span>20.10</span></p>
+            </div>
+          </article>
+          <article class="portfolio-item reveal-up">
+            <button class="portfolio-media portfolio-media-fit" type="button" data-caption="Một ngày 20/10 thật dịu dàng." aria-label="Xem ảnh: Một ngày 20/10">
+              <img src="assets/photos/teacher-flowers.jpg" alt="Cô gái áo xanh bên bó hoa trước bảng lớp" loading="lazy" decoding="async">
+              <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
+            </button>
+            <div class="portfolio-meta">
+              <p class="portfolio-category">Frame 04</p>
+              <h3 class="portfolio-title">Một ngày 20/10</h3>
+              <p class="portfolio-tags"><span>Bó hoa</span><span>Dịu dàng</span></p>
+            </div>
+          </article>
+          <article class="portfolio-item reveal-up">
+            <button class="portfolio-media portfolio-media-fit" type="button" data-caption="Một buổi chiều cùng bạn nhỏ." aria-label="Xem ảnh: Cùng bạn nhỏ">
+              <img src="assets/photos/rabbit-feeding.jpg" alt="Cô gái cho thỏ ăn trong vườn" loading="lazy" decoding="async">
+              <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
+            </button>
+            <div class="portfolio-meta">
+              <p class="portfolio-category">Frame 05</p>
+              <h3 class="portfolio-title">Cùng bạn nhỏ</h3>
+              <p class="portfolio-tags"><span>Rabbit</span><span>Bình yên</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section questions" id="questions" aria-labelledby="questionsTitle">
+      <div class="section-inner questions-inner">
+        <div class="questions-head reveal-up">
+          <div>
+            <p class="eyebrow">A Few Questions</p>
+            <h2 id="questionsTitle">Năm câu hỏi nhỏ,<br><em>nếu cậu muốn kể.</em></h2>
+          </div>
+          <p class="section-copy">Không có đáp án đúng sai. Cậu có thể trả lời, bỏ qua, hoặc quay lại bất cứ lúc nào. Những gì cậu viết chỉ ở lại trong trang này.</p>
+        </div>
+        <div class="question-card reveal-up">
+          <div class="question-top">
+            <p class="question-progress" id="questionProgress">Câu 1/5</p>
+            <div class="question-meter" aria-hidden="true"><span id="questionMeter"></span></div>
+          </div>
+          <div class="question-body" id="questionBody">
+            <h3 class="question-text" id="questionText" aria-live="polite">Nếu có một ngày hoàn toàn dành cho bản thân, cậu sẽ muốn trải qua ngày đó như thế nào?</h3>
+            <label class="sr-only" for="questionAnswer">Câu trả lời của cậu</label>
+            <textarea class="question-answer" id="questionAnswer" rows="4" aria-describedby="questionNote" placeholder="Viết một chút, nếu cậu muốn..."></textarea>
+          </div>
+          <div class="question-actions">
+            <button class="btn-primary" type="button" id="nextBtn">Tiếp tục <span aria-hidden="true">→</span></button>
+            <button class="btn-ghost" type="button" id="skipBtn">Bỏ qua</button>
+            <button class="btn-back" type="button" id="backBtn" hidden>Quay lại</button>
+          </div>
+          <p class="question-note" id="questionNote">Không bắt buộc trả lời. Không có gì được gửi đi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section thank-you ending" id="thank-you" aria-labelledby="thankYouTitle">
+      <canvas class="ending-rain" id="endingPetalCanvas" aria-hidden="true"></canvas>
+      <div class="ending-stage" id="endingStage">
+        <div class="ending-particles" id="endingParticles" aria-hidden="true"></div>
+
+        <article class="letter-card ending-letter" id="endingLetter">
+          <p class="eyebrow" id="letterEyebrow">A Note For You</p>
+          <h2 id="thankYouTitle" tabindex="-1">Gửi Diệu Ánh,<br><em>người bạn thật dịu dàng.</em></h2>
+          <div class="letter-body" id="letterBody">
+            <p>Cảm ơn cậu đã luôn là một người bạn tuyệt vời, chu đáo và đem lại cảm giác bình yên cho mọi người xung quanh.</p>
+            <p>Có những lời chúc không cần phải thật cầu kỳ để trở nên chân thành. Nhân ngày 20/10, chúc cậu luôn có thật nhiều niềm vui, giữ được sự dịu dàng và nhiệt thành của riêng mình.</p>
+            <p>Mong những ngày sắp tới sẽ mang đến cho cậu nhiều điều tốt đẹp, những người tử tế và thật nhiều lý do để mỉm cười.</p>
+            <p class="letter-emphasis">Món quà nhỏ này tuy giản dị nhưng chứa đầy sự chân thành gửi đến cậu.</p>
+          </div>
+          <p class="letter-sign" id="letterSign">Một lời chúc nhỏ, <span>gửi riêng Diệu Ánh.</span></p>
+          <div class="ending-letter-actions">
+            <button class="btn-primary ending-continue" id="endingContinue" type="button">Đi đến món quà nhỏ <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+
+        <div class="ending-invitation" id="endingInvitation" aria-hidden="true">
+          <span class="ending-invitation-glow" aria-hidden="true"></span>
+          <p class="eyebrow">One More Gift</p>
+          <p class="ending-invitation-title">Còn một món quà nhỏ<br><em>dành cho cậu…</em></p>
+          <p class="ending-invitation-copy">Một bó hoa được kết từ những khung hình của cậu.</p>
+          <button class="btn-primary ending-invitation-button" id="bouquetStart" type="button">Tiếp tục <span aria-hidden="true">→</span></button>
+        </div>
+
+        <div class="finale-visual ending-flower-scene" id="endingFlowerScene" aria-hidden="true">
+          <p class="eyebrow ending-bouquet-eyebrow">Just A Little Wish</p>
+
+          <div class="bouquet-wrap" id="bouquetWrap">
+            <span class="bouquet-aura" aria-hidden="true"></span>
+            <span class="bouquet-paper" aria-hidden="true"></span>
+            <span class="bouquet-stem" aria-hidden="true"></span>
+            <span class="bouquet-leaf bl1" aria-hidden="true"></span>
+            <span class="bouquet-leaf bl2" aria-hidden="true"></span>
+            <span class="bouquet-leaf bl3" aria-hidden="true"></span>
+            <span class="bouquet-leaf bl4" aria-hidden="true"></span>
+            <span class="bouquet-leaf bl5" aria-hidden="true"></span>
+            <span class="bouquet-ribbon" aria-hidden="true"></span>
+
+            <div class="bouquet-head" id="bloom" role="img" aria-label="Bó hoa được ghép từ những khung ảnh">
+              <div class="bouquet-center" id="bloomCenter" aria-hidden="true">Diệu Ánh<br><small>20.10</small></div>
+              <div class="bouquet-petals" id="bouquetPetals"></div>
+              <span class="bouquet-bud bud-left" aria-hidden="true"></span>
+              <span class="bouquet-bud bud-right" aria-hidden="true"></span>
+              <span class="bouquet-bud bud-extra" aria-hidden="true"></span>
+            </div>
+
+            <span class="bouquet-light" aria-hidden="true"></span>
+            <span class="bouquet-foreground-petal fp1" aria-hidden="true"></span>
+            <span class="bouquet-foreground-petal fp2" aria-hidden="true"></span>
+            <span class="bouquet-foreground-petal fp3" aria-hidden="true"></span>
+          </div>
+
+          <p class="final-wish" id="endingFinalWish" tabindex="-1">Chúc Diệu Ánh một ngày 20/10 thật ấm áp,<br>luôn mỉm cười và hạnh phúc mỗi ngày.</p>
+          <p class="final-signature" id="endingSignature">— Gửi tặng người bạn đáng mến Diệu Ánh —</p>
+          <button class="btn-ghost restart-btn" type="button" id="restartBtn">Xem lại từ đầu ↺</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Chân trang">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#hero">A Little Gift<span class="brand-dot">.</span></a>
+        <p>Món quà nhỏ cho ngày 20/10 gửi tặng những người bạn thân — Hồ Thị Diệu Ánh, Nguyễn Khánh Ngọc, Nguyễn Trang Nhung, Hoàng Thái Việt.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Mục lục</h4>
+          <a href="#story">Câu chuyện</a>
+          <a href="#moments">Khung hình</a>
+          <a href="#questions">Đôi điều</a>
+          <a href="#thank-you">Lời cảm ơn</a>
+        </div>
+        <div class="footer-col">
+          <h4>Kết nối</h4>
+          <span>Instagram</span>
+          <span>Facebook</span>
+          <span>Email</span>
+        </div>
+        <div class="footer-col">
+          <h4>Dấu mốc</h4>
+          <span>20 · 10</span>
+          <span>Hà Nội</span>
+          <span>Một món quà nhỏ</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 A Little Gift</span>
+      <span>Những câu trả lời chỉ ở lại trong trang này.</span>
+    </div>
+  </footer>
+
+  <svg class="rose-symbols" aria-hidden="true" width="0" height="0" focusable="false">
+    <defs>
+      <radialGradient id="roseOuter" cx="36%" cy="26%" r="82%">
+        <stop offset="0%" stop-color="#ff9aac"/>
+        <stop offset="40%" stop-color="#d43a58"/>
+        <stop offset="100%" stop-color="#7a0f28"/>
+      </radialGradient>
+      <radialGradient id="roseMid" cx="42%" cy="30%" r="80%">
+        <stop offset="0%" stop-color="#f06d88"/>
+        <stop offset="55%" stop-color="#b51f3e"/>
+        <stop offset="100%" stop-color="#5d0a1d"/>
+      </radialGradient>
+      <radialGradient id="roseInner" cx="46%" cy="34%" r="78%">
+        <stop offset="0%" stop-color="#e85774"/>
+        <stop offset="60%" stop-color="#8e1230"/>
+        <stop offset="100%" stop-color="#3d0511"/>
+      </radialGradient>
+      <radialGradient id="rosePink" cx="40%" cy="28%" r="80%">
+        <stop offset="0%" stop-color="#ffd0da"/>
+        <stop offset="60%" stop-color="#f39ab0"/>
+        <stop offset="100%" stop-color="#c94d6c"/>
+      </radialGradient>
+      <radialGradient id="roseCream" cx="40%" cy="26%" r="80%">
+        <stop offset="0%" stop-color="#fff4e6"/>
+        <stop offset="65%" stop-color="#f5d8c2"/>
+        <stop offset="100%" stop-color="#d9a98f"/>
+      </radialGradient>
+      <linearGradient id="roseStem" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#6f8b5f"/>
+        <stop offset="100%" stop-color="#3d5638"/>
+      </linearGradient>
+    </defs>
+    <symbol id="cinemaRoseSymbol" viewBox="0 0 220 340">
+      <path d="M110 165 C107 210 108 260 111 330" fill="none" stroke="url(#roseStem)" stroke-width="7" stroke-linecap="round"/>
+      <path d="M111 248 C85 230 62 236 52 264 C78 274 101 266 111 248Z" fill="#4f6b4a"/>
+      <path d="M111 276 C136 258 158 264 168 290 C143 300 120 294 111 276Z" fill="#5c7a54"/>
+      <g>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseOuter)" transform="rotate(0 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseMid)" transform="rotate(45 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseOuter)" transform="rotate(90 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseMid)" transform="rotate(135 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseOuter)" transform="rotate(180 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseMid)" transform="rotate(225 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseOuter)" transform="rotate(270 110 110)"/>
+        <ellipse cx="110" cy="60" rx="38" ry="49" fill="url(#roseMid)" transform="rotate(315 110 110)"/>
+        <ellipse cx="110" cy="82" rx="25" ry="31" fill="url(#rosePink)" transform="rotate(22 110 110)"/>
+        <ellipse cx="110" cy="82" rx="25" ry="31" fill="url(#roseInner)" transform="rotate(94 110 110)"/>
+        <ellipse cx="110" cy="82" rx="25" ry="31" fill="url(#rosePink)" transform="rotate(166 110 110)"/>
+        <ellipse cx="110" cy="82" rx="25" ry="31" fill="url(#roseInner)" transform="rotate(238 110 110)"/>
+        <ellipse cx="110" cy="82" rx="25" ry="31" fill="url(#roseCream)" transform="rotate(310 110 110)"/>
+        <circle cx="110" cy="110" r="22" fill="url(#roseInner)"/>
+        <path d="M110 98 C122 98 129 110 120 119 C111 128 96 120 100 108 C102 101 110 101 114 107" fill="none" stroke="#5f0b20" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M92 74 C104 62 124 64 134 78" fill="none" stroke="#ffd7df" stroke-width="2" stroke-linecap="round" opacity=".34"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <button class="sound-toggle" id="soundToggle" type="button" aria-label="Bật hoặc tắt nhạc" aria-pressed="false">♫ <span>Nhạc: tắt</span></button>
+  <audio id="bgMusic" preload="metadata">
+    <source src="assets/audio/music.webm" type="audio/webm">
+  </audio>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+    <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Đóng ảnh">×</button>
+    <img id="lightboxImage" alt="Ảnh phóng to">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <div class="petal-cinema" id="petalCinema" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cinemaHiddenTitle">
+    <h2 class="sr-only" id="cinemaHiddenTitle">A Rain of Petals &amp; Wishes</h2>
+    <canvas class="petal-canvas" id="petalCanvas" aria-hidden="true"></canvas>
+    <div class="cinema-vignette" aria-hidden="true"></div>
+    <div class="cinema-haze" aria-hidden="true"></div>
+    <button class="cinema-close" id="closeCinema" type="button" aria-label="Đóng hiệu ứng">×</button>
+
+    <div class="cinema-scene">
+      <div class="cinema-rose-stage" id="cinemaRoseStage" aria-hidden="true">
+        <div class="cinema-rose-glow"></div>
+        <div class="cinema-rose-ring"></div>
+        <div class="cinema-rose">
+          <svg class="rose-svg" viewBox="0 0 220 340" aria-hidden="true"><use href="#cinemaRoseSymbol"></use></svg>
+        </div>
+      </div>
+
+      <div class="cinema-intro" id="cinemaIntro">
+        <p class="cinema-prompt" id="cinemaPrompt">Chạm vào bông hoa nhé…</p>
+        <p class="cinema-subprompt">Một cơn mưa cánh hoa, vài khung hình và những lời chúc nhỏ đang chờ cậu.</p>
+      </div>
+
+      <div class="cinema-photo-layer" id="cinemaPhotoLayer" aria-hidden="true"></div>
+      <div class="cinema-wish-layer" id="cinemaWishLayer" aria-live="polite"></div>
+
+      <div class="cinema-final" id="cinemaFinal" aria-hidden="true">
+        <div class="cinema-final-inner">
+          <div class="cinema-final-photo">
+            <img id="cinemaFinalImage" src="assets/photos/teacher-flowers.jpg" alt="Cô gái áo xanh bên bó hoa trước bảng lớp">
+            <span>20 · 10</span>
+          </div>
+          <p class="cinema-final-kicker">A Little Wish · 20.10</p>
+          <h2 id="cinemaFinalTitle" tabindex="-1">Chúc cậu ngày 20/10<br>thật vui vẻ!</h2>
+          <p class="cinema-final-copy" id="cinemaFinalCopy">Mong cậu luôn rạng rỡ, bình yên và có thật nhiều điều đáng yêu chờ đón phía trước.</p>
+          <button class="cinema-replay" id="replayCinema" type="button">Xem lại khoảnh khắc</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
