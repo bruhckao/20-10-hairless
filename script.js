@@ -1392,6 +1392,7 @@ function buildBouquetPetals() {
   bouquetPetals.replaceChildren();
 
   const imagePositions = {
+    'dieu-anh-beach.jpg': '50% 25%',
     'dieu-anh-1.jpg': '50% 35%',
     'dieu-anh-2.jpg': '50% 25%',
     'dieu-anh-3.jpg': '50% 40%',
@@ -1586,7 +1587,7 @@ const FRIENDS_DATA = {
     headline: 'Một món quà nhỏ<br>gửi <em>Diệu Ánh.</em>',
     heroText: 'Nhân ngày 20/10, t chúc Ánh ngày càng xinh đẹp, đẳng cấp, ít stress, siêu giàu. Chúc Ánh luôn vui vẻ, rạng ngời luôn luôn hạnh phúc trong cuộc sống he',
     heroCaption: 'Một chút dịu dàng,<br>gửi riêng Diệu Ánh.',
-    heroImage: 'assets/photos/dieu-anh/dieu-anh-1.jpg',
+    heroImage: 'assets/photos/dieu-anh/dieu-anh-beach.jpg',
     bloomCenter: 'Diệu Ánh<br><small>20.10</small>',
     letterTitle: 'Gửi Diệu Ánh,<br><em>người bạn tuyệt vời.</em>',
     letterParagraphs: [
@@ -1610,11 +1611,11 @@ const FRIENDS_DATA = {
       'Chúc Ánh luôn vui vẻ, rạng ngời luôn luôn hạnh phúc trong cuộc sống!'
     ],
     photos: [
+      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh nụ cười rạng rỡ', caption: 'Nụ cười tỏa nắng' },
       { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh che miệng cười', caption: 'Một chút đáng yêu' },
       { src: 'assets/photos/dieu-anh/dieu-anh-2.jpg', alt: 'Diệu Ánh áo xanh', caption: 'Khoảnh khắc rạng ngời' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-3.jpg', alt: 'Diệu Ánh selfie', caption: 'Góc cận đáng yêu' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh nụ cười xinh', caption: 'Nụ cười tỏa nắng' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-2.jpg', alt: 'Diệu Ánh 20/10', caption: 'Chúc Ánh luôn vui he' }
+      { src: 'assets/photos/dieu-anh/dieu-anh-3.jpg', alt: 'Diệu Ánh selfie', caption: 'Góc cận xinh xắn' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh 20/10', caption: 'Chúc Ánh luôn vui he' }
     ]
   },
   'trang-nhung': {
@@ -1769,7 +1770,7 @@ const FRIENDS_DATA = {
       'Chúc ngày 20/10 thật ý nghĩa cho tất cả những người bạn thân yêu nhất!'
     ],
     photos: [
-      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh', caption: 'Diệu Ánh dịu dàng' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh', caption: 'Diệu Ánh dịu dàng' },
       { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Khánh Ngọc', caption: 'Khánh Ngọc - Ngật Đòng' },
       { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung', caption: 'Trang Nhung lầy lội' },
       { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Thái Việt', caption: 'Thái Việt phong độ' },
