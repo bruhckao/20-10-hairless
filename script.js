@@ -1590,13 +1590,13 @@ const FRIENDS_DATA = {
     heroCaption: 'Một chút dịu dàng,<br>gửi riêng Diệu Ánh.',
     heroImage: 'assets/photos/dieu-anh/dieu-anh-beach.jpg',
     bloomCenter: 'Diệu Ánh<br><small>20.10</small>',
-    letterTitle: 'Gửi Diệu Ánh,<br><em>người bạn tuyệt vời.</em>',
+    letterTitle: 'Gửi Diệu Ánh,<br><em>sunshine.</em>',
+    letterBold: true,
     letterParagraphs: [
-      'Cảm ơn Ánh đã luôn là một người bạn tuyệt vời, chu đáo và đem lại cảm giác bình yên cho mọi người xung quanh.',
-      'Có những lời chúc không cần quá khoa trương, chỉ mong cậu biết rằng sự hiện diện của cậu luôn rất quý giá nè, nên là đừng có suy nghĩ tiêu cực(nếu có...) he.',
-      'Nhân ngày 20/10, chúc Diệu Ánh luôn an yên, mạnh mẽ khi cần và dịu dàng khi muốn. Mong tương lai sẽ dịu dàng nâng niu mọi ước mơ của Ánh.'
+      'Cảm ơn Ánh vì đã luôn là 1 người tuyệt vời, t chúc Ánh luôn luôn vui vẻ trong cuộc sống, mọi thứ đến với Ánh đều đúng ý mà m muốn, Ánh là 1 người t đánh giá thực sự rất rất tốt nên là đừng suy nghĩ chie tiêu cực nhiều nhe.',
+      'Chúc Ánh luôn xinh đẹp, tươi tắn, rạng rỡ. Công việc và học tập luôn thuận lợi, tốt đẹp. Chúc m luôn khỏe mạnh,ít stress, sống dai phi phai. Và trên hết thì t chúc m luôn được làm và làm được những điều m muốn, m thích'
     ],
-    letterSign: 'gửi riêng cho <span>Diệu Ánh.</span>',
+    letterSign: 'gửi riêng cho<br><span>Diệu Ánh</span>',
     finalWish: 'Chúc Diệu Ánh một ngày 20/10 thật ấm áp,<br>luôn mỉm cười và hạnh phúc mỗi ngày.',
     signature: '— Gửi tặng người bạn đáng mến Diệu Ánh —',
     cinemaFinalTitle: 'Chúc Diệu Ánh ngày 20/10<br>thật dịu dàng & vui vẻ!',
@@ -1612,11 +1612,10 @@ const FRIENDS_DATA = {
       'Chúc Ánh luôn vui vẻ, rạng ngời luôn luôn hạnh phúc trong cuộc sống!'
     ],
     photos: [
-      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh nụ cười rạng rỡ', caption: 'Nụ cười tỏa nắng' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh che miệng cười', caption: 'Một chút đáng yêu' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-2.jpg', alt: 'Diệu Ánh áo xanh', caption: 'Khoảnh khắc rạng ngời' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-3.jpg', alt: 'Diệu Ánh selfie', caption: 'Góc cận xinh xắn' },
-      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh 20/10', caption: 'Chúc Ánh luôn vui he' }
+      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh nụ cười rạng rỡ', caption: '' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-1.jpg', alt: 'Diệu Ánh che miệng cười', caption: '' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-2.jpg', alt: 'Diệu Ánh áo xanh', caption: '' },
+      { src: 'assets/photos/dieu-anh/dieu-anh-3.jpg', alt: 'Diệu Ánh selfie', caption: '' }
     ]
   },
   'trang-nhung': {
@@ -1632,12 +1631,11 @@ const FRIENDS_DATA = {
     bloomCenter: 'Trang Nhung<br><small>20.10</small>',
     letterTitle: 'Gửi Trang Nhung,<br><em>con bò măm học bổng.</em>',
     letterParagraphs: [
-      'đcm hóa ra ngày xưa m cũng ơ ri, dừ t cũng v, 1h sáng kh biết viết mẹ chi.',
-      'Chúc m măm học bổng kh trượt kì mô, đạt được kì vọng, có ước mơ chi hoàn thành hết, chúc nail luôn đẹp..',
-      'Chúc đường tình duyên oce',
-      'hết cmnr...'
+      'Chúc Nhung 20/10 vui vẻ, đỉnh cấp',
+      'Chúc m luôn vui vẻ, học giỏi, kh trượt học bổng mô.Chờ t giàu t cho 2 tỉ (đừng tin). Chúc m nail đẹp...',
+      'Đầu t hết chữ r nên là tổng kết lun nhe. Chúc m đạt được ước mơ, mục tiêu m đặt ra, con đường học tập với công việc luôn suôn sẻ, học thạc sĩ,tiến sĩ go brr brr. Chúc m chồng siêu giàu siêu yêu vợ và cho bạn vợ đi du lịch ké'
     ],
-    letterSign: 'gửi <span>Nhung.</span>',
+    letterSign: 'gửi<br><span>Nhung</span>',
     finalWish: 'Chúc Trang Nhung 20/10 vui vẻ,<br>học bổng măm full, nail đẹp & tình duyên oce!',
     signature: '— Gửi con bò Trang Nhung —',
     cinemaFinalTitle: 'Chúc Trang Nhung 20/10<br>măm học bổng full & xinh gái đcap!',
@@ -1645,17 +1643,14 @@ const FRIENDS_DATA = {
     cinemaWishes: [
       'Chúc Nhung 20/10 vui vẻ. Con bò học giỏi măm học bổng full!',
       'Chúc m đcap xinh gái, nhiều tiền, t hết văn r....',
-      'đcm hóa ra ngày xưa m cũng ơ ri, dừ t cũng v, 1h sáng kh biết viết mẹ chi.',
       'Chúc m măm học bổng kh trượt kì mô, đạt được kì vọng, ước mơ chi hoàn thành hết!',
       'Chúc nail luôn đẹp, chúc đường tình duyên oce!',
-      'Hết cmnr... gửi Nhung!'
+      'Chúc đạt được ước mơ, thạc sĩ tiến sĩ go brr brr!'
     ],
     photos: [
-      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung góc rộng cực lầy', caption: 'Con bò măm học bổng' },
-      { src: 'assets/photos/trang-nhung/trang-nhung-2.jpg', alt: 'Trang Nhung đeo kính xinh gái', caption: 'Xinh gái đcap vjp pro' },
-      { src: 'assets/photos/trang-nhung/trang-nhung-3.jpg', alt: 'Trang Nhung ảnh hồi nhỏ', caption: 'Hóa ra ngày xưa m cũng ơ ri' },
-      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung selfie', caption: '1h sáng hết cmn văn' },
-      { src: 'assets/photos/trang-nhung/trang-nhung-2.jpg', alt: 'Trang Nhung 20/10', caption: 'Chúc Nhung 20/10 vui vẻ' }
+      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung góc rộng cực lầy', caption: '' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-2.jpg', alt: 'Trang Nhung đeo kính xinh gái', caption: '' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-3.jpg', alt: 'Trang Nhung ảnh hồi nhỏ', caption: '' }
     ]
   },
   'khanh-ngoc': {
@@ -1672,12 +1667,11 @@ const FRIENDS_DATA = {
     bloomCenter: 'Ngật Đòng<br><small>20.10</small>',
     letterTitle: 'Gửi Khánh Ngọc,<br><em>gửi Ngật Đòng.</em>',
     letterParagraphs: [
-      'Nhân ngày 20/10, t chúc Ngọc sẽ thay đổi được theo ý bản thân, trở thành 1 Ngọc mà m muốn.',
-      'Chúc m luôn luôn vui vẻ, giữ được năng lượng tích cực của mình, học hành đcap vjp pro, xinh gái.',
-      'Chúc m mọi điều tốt đẹp nhất sẽ đến với m trong chặng đường sắp tới!',
-      'hapi 20/10'
+      '20/10 t chúc Ngọc luôn vui vẻ, xinh gái, hạnh phúc nè.',
+      'Chúc Ngọc học hành ngày càng tốt, công việc thuận lợi phú bà, chồng giàu yêu vợ thương con tài sản kếch xù.',
+      'Dạo nie kh nói chuyện nhiều, nhưng t cảm giác m đang thay đổi để tốt hơn, nếu đúng thì t chúc ngật đòng có thể thay đổi bản thân theo đúng hướng mình muốn nhe. Chúc Ngọc trở thành phiên bản tốt nhất mà m luôn hướng đến.'
     ],
-    letterSign: 'gửi <span>Ngật Đòng.</span>',
+    letterSign: 'gửi<br><span>Ngật Đòng</span>',
     finalWish: 'Chúc Khánh Ngọc 20/10 hapi vui vẻ,<br>học hành đcap vjp pro và luôn xinh gái!',
     signature: '— Người bạn thân gửi Ngật Đòng —',
     cinemaFinalTitle: 'Chúc Ngật Đòng ngày 20/10<br>hapi vui vẻ & đcap vjp pro!',
@@ -1691,11 +1685,9 @@ const FRIENDS_DATA = {
       'Hapi 20/10 nha bạn tôi!'
     ],
     photos: [
-      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Khánh Ngọc trong xe đẩy siêu thị', caption: 'Ngật Đòng trong xe đẩy siêu thị' },
-      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-2.jpg', alt: 'Khánh Ngọc ăn cơm', caption: 'Ăn no chóng lớn' },
-      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-3.jpg', alt: 'Khánh Ngọc cận cảnh', caption: 'Góc cận đcap vjp pro' },
-      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Ngật Đòng cá tính', caption: 'Phiên bản độc nhất vô nhị' },
-      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-2.jpg', alt: 'Khánh Ngọc 20/10', caption: 'Hapi 20/10 nhé Ngật Đòng' }
+      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Khánh Ngọc trong xe đẩy siêu thị', caption: '' },
+      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-2.jpg', alt: 'Khánh Ngọc ăn cơm', caption: '' },
+      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-3.jpg', alt: 'Khánh Ngọc cận cảnh', caption: '' }
     ]
   },
   'thai-viet': {
@@ -1727,11 +1719,7 @@ const FRIENDS_DATA = {
       'Hôm nay cứ việc chill, nạp năng lượng và tận hưởng ngày thật trọn vẹn nhé!'
     ],
     photos: [
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt', caption: '' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt mỉm cười', caption: '' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thảnh thơi', caption: '' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thư giãn', caption: '' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt 20/10', caption: '' }
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt', caption: '' }
     ]
   },
   'hoi-ban-than': {
@@ -1766,11 +1754,10 @@ const FRIENDS_DATA = {
       'Chúc ngày 20/10 thật ý nghĩa cho tất cả những người bạn thân yêu nhất!'
     ],
     photos: [
-      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh', caption: 'Diệu Ánh dịu dàng' },
-      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Khánh Ngọc', caption: 'Khánh Ngọc - Ngật Đòng' },
-      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung', caption: 'Trang Nhung lầy lội' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Thái Việt', caption: 'Thái Việt phong độ' },
-      { src: 'assets/photos/cat-bouquet.jpg', alt: 'Cả nhóm', caption: 'Hội bạn thân mãi keo' }
+      { src: 'assets/photos/dieu-anh/dieu-anh-beach.jpg', alt: 'Diệu Ánh', caption: '' },
+      { src: 'assets/photos/khanh-ngoc/khanh-ngoc-1.jpg', alt: 'Khánh Ngọc', caption: '' },
+      { src: 'assets/photos/trang-nhung/trang-nhung-1.jpg', alt: 'Trang Nhung', caption: '' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Thái Việt', caption: '' }
     ]
   }
 };
@@ -1831,21 +1818,38 @@ function selectFriend(friendKey, { updateUrl = true } = {}) {
     friendElements.heroImage.alt = `Ảnh của ${friend.shortName}`;
   }
 
-  // Update Moments Grid
-  if (friendElements.portfolioGrid && friend.photos && friend.photos.length) {
-    const items = friendElements.portfolioGrid.querySelectorAll('.portfolio-item');
+  // Update Moments Grid (dynamically render exact photos with no repeats)
+  if (friendElements.portfolioGrid && friend.photos) {
+    friendElements.portfolioGrid.dataset.count = String(friend.photos.length);
+    friendElements.portfolioGrid.replaceChildren();
     friend.photos.forEach((photo, idx) => {
-      if (items[idx]) {
-        const btn = items[idx].querySelector('.portfolio-media');
-        const img = items[idx].querySelector('img');
-        const title = items[idx].querySelector('.portfolio-title');
-        if (btn) btn.dataset.caption = '';
-        if (img) {
-          img.src = photo.src;
-          img.alt = photo.alt;
-        }
-        if (title) title.textContent = '';
-      }
+      const article = document.createElement('article');
+      article.className = 'portfolio-item reveal-up is-visible';
+
+      const btn = document.createElement('button');
+      btn.className = 'portfolio-media';
+      btn.type = 'button';
+      btn.setAttribute('aria-label', `Xem ảnh ${idx + 1}`);
+      btn.dataset.caption = '';
+      btn.addEventListener('click', () => openLightbox(btn));
+
+      const img = document.createElement('img');
+      img.src = photo.src;
+      img.alt = photo.alt || `Ảnh kỷ niệm ${idx + 1}`;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+
+      const view = document.createElement('span');
+      view.className = 'portfolio-view';
+      view.setAttribute('aria-hidden', 'true');
+      const viewText = document.createElement('span');
+      viewText.textContent = 'Xem ảnh';
+      view.appendChild(viewText);
+
+      btn.appendChild(img);
+      btn.appendChild(view);
+      article.appendChild(btn);
+      friendElements.portfolioGrid.appendChild(article);
     });
   }
 
@@ -1854,6 +1858,11 @@ function selectFriend(friendKey, { updateUrl = true } = {}) {
   if (friendElements.thankYouTitle) friendElements.thankYouTitle.innerHTML = friend.letterTitle;
   if (friendElements.letterBody) {
     friendElements.letterBody.replaceChildren();
+    if (friend.letterBold) {
+      friendElements.letterBody.classList.add('is-bold');
+    } else {
+      friendElements.letterBody.classList.remove('is-bold');
+    }
     friend.letterParagraphs.forEach((para, idx) => {
       const p = document.createElement('p');
       if (idx === friend.letterParagraphs.length - 1) {
