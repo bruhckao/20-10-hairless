@@ -634,6 +634,7 @@ button {
 }
 
 .portfolio-meta {
+  display: none !important;
   padding-top: 20px;
 }
 

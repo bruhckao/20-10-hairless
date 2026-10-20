@@ -60,8 +60,8 @@ if (navToggle && mobileMenu) {
 // Audio toggle. Playback still requires a user gesture.
 const audio = document.getElementById('bgMusic');
 const soundToggle = document.getElementById('soundToggle');
-const MUSIC_START_TIME = 5;
-const MUSIC_END_TRIM = 20;
+const MUSIC_START_TIME = 0;
+const MUSIC_END_TRIM = 0;
 let musicEnabled = false;
 let musicEndTime = Infinity;
 let musicMonitorFrame = null;
@@ -214,8 +214,9 @@ function openLightbox(card) {
   closeMobileMenu();
   lastFocusedElement = card;
   lightboxImage.src = image.src;
-  lightboxImage.alt = image.alt;
-  lightboxCaption.textContent = card.dataset.caption || '';
+  if (lightboxCaption) {
+    lightboxCaption.textContent = card.dataset.caption || '';
+  }
   lightbox.classList.add('open');
   lightbox.setAttribute('aria-hidden', 'false');
   document.body.classList.add('lightbox-open');
@@ -1704,38 +1705,33 @@ const FRIENDS_DATA = {
     icon: '🚀',
     eyebrow: 'Friendship · 20.10',
     headline: '20/10 vui tới bến<br>gửi <em>Thái Việt.</em>',
-    heroText: 'Dù ngày 20/10 hay bất kỳ ngày nào, chúc Thái Việt luôn vui vẻ, bớt áp lực, phong độ ngời ngời và vạn sự hanh thông!',
+    heroText: 'vk 20/10 vui vẻ :3',
     heroCaption: 'Chúc đồng chí Việt<br>ngày nào cũng đỉnh!',
     heroImage: 'assets/photos/thai-viet/thai-viet-1.jpg',
     bloomCenter: 'Thái Việt<br><small>20.10</small>',
-    letterTitle: 'Gửi Thái Việt,<br><em>người bạn chiến hữu của tôi.</em>',
+    letterTitle: 'Gửi Thái Việt,',
     letterParagraphs: [
-      'Nhân dịp 20/10, gửi vài dòng chúc ông bạn thân luôn giữ vững năng lượng tích cực và tinh thần lạc quan.',
-      'Rất vui vì trong hành trình này có một người bạn đồng hành vừa vui tính, vừa nhiệt tình và đáng tin như ông.',
-      'Chúc Thái Việt luôn có những bước tiến vững vàng, làm gì cũng suôn sẻ và gặt hái nhiều thành công.',
-      'Hôm nay hãy cứ thư giãn và tận hưởng một ngày thật vui vẻ nhé!'
+      'chịt'
     ],
-    letterSign: 'Gửi lời chúc chân thành, <span>đến chiến hữu Thái Việt.</span>',
-    finalWish: 'Chúc Hoàng Thái Việt luôn phong độ,<br>may mắn và ngập tràn niềm vui!',
-    signature: '— Người bạn thân chí cốt của ông —',
-    cinemaFinalTitle: 'Chúc Thái Việt ngày 20/10<br>vui vẻ & phong độ ngời ngời!',
-    cinemaFinalCopy: 'Ăn ngon ngủ kỹ, không lo deadline hành hạ, chơi game thắng liên tục!',
+    letterSign: 'gửi <span>vk Thái Việt.</span>',
+    finalWish: 'vk 20/10 vui vẻ :3',
+    signature: '— Gửi vk Thái Việt —',
+    cinemaFinalTitle: 'vk 20/10 vui vẻ :3',
+    cinemaFinalCopy: 'chịt',
     cinemaWishes: [
+      'vk 20/10 vui vẻ :3',
+      'chịt',
       'Chúc Thái Việt ngày 20/10 vui vẻ, dù là ngày gì thì cũng chúc bạn tôi luôn vui!',
-      'Chúc đồng chí sức khỏe dồi dào, ví dày như từ điển, tinh thần lúc nào cũng phơi phới.',
-      'Mong công việc và học tập thuận lợi, gánh team xuất sắc và không lo tụt mood.',
-      'Chúc Việt luôn giữ vững phong độ, hài hước và nhiệt huyết như mọi ngày.',
       'Ăn ngon ngủ kỹ, không bị deadline hành hạ, chơi game thì thắng liên tục.',
       'Cảm ơn vì đã luôn là người bạn chí cốt cực kỳ đáng tin cậy trong nhóm!',
-      'Chúc mọi dự định sắp tới của ông đều thành công rực rỡ và phát tài sớm.',
       'Hôm nay cứ việc chill, nạp năng lượng và tận hưởng ngày thật trọn vẹn nhé!'
     ],
     photos: [
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt', caption: 'Phong độ ngời ngời' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt mỉm cười', caption: 'Đồng chí chiến hữu' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thảnh thơi', caption: 'Một ngày thảnh thơi' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thư giãn', caption: 'Không vướng bận deadline' },
-      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt 20/10', caption: 'Chúc mừng 20/10' }
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt', caption: '' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt mỉm cười', caption: '' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thảnh thơi', caption: '' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt thư giãn', caption: '' },
+      { src: 'assets/photos/thai-viet/thai-viet-1.jpg', alt: 'Hoàng Thái Việt 20/10', caption: '' }
     ]
   },
   'hoi-ban-than': {
@@ -1843,12 +1839,12 @@ function selectFriend(friendKey, { updateUrl = true } = {}) {
         const btn = items[idx].querySelector('.portfolio-media');
         const img = items[idx].querySelector('img');
         const title = items[idx].querySelector('.portfolio-title');
-        if (btn) btn.dataset.caption = photo.caption;
+        if (btn) btn.dataset.caption = '';
         if (img) {
           img.src = photo.src;
           img.alt = photo.alt;
         }
-        if (title) title.textContent = photo.caption;
+        if (title) title.textContent = '';
       }
     });
   }

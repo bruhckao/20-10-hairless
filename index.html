@@ -135,59 +135,34 @@
 
         <div class="portfolio-grid" id="portfolioGrid">
           <article class="portfolio-item reveal-up">
-            <button class="portfolio-media" type="button" data-caption="Một khung hình xanh dịu dàng." aria-label="Xem ảnh: Một khung hình xanh">
+            <button class="portfolio-media" type="button" aria-label="Xem ảnh">
               <img src="assets/photos/green-dress.jpg" alt="Ảnh trong khung hoa xanh" loading="lazy" decoding="async">
               <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
             </button>
-            <div class="portfolio-meta">
-              <p class="portfolio-category">Frame 01</p>
-              <h3 class="portfolio-title">Một khung hình xanh</h3>
-              <p class="portfolio-tags"><span>Green dress</span><span>Dịu dàng</span></p>
-            </div>
           </article>
           <article class="portfolio-item reveal-up">
-            <button class="portfolio-media" type="button" data-caption="Một chút nắng, một chút bình yên." aria-label="Xem ảnh: Một chút nắng">
+            <button class="portfolio-media" type="button" aria-label="Xem ảnh">
               <img src="assets/photos/boat.jpg" alt="Ảnh bên hồ với nón lá" loading="lazy" decoding="async">
               <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
             </button>
-            <div class="portfolio-meta">
-              <p class="portfolio-category">Frame 02</p>
-              <h3 class="portfolio-title">Một chút nắng</h3>
-              <p class="portfolio-tags"><span>Boat</span><span>Bình yên</span></p>
-            </div>
           </article>
           <article class="portfolio-item reveal-up">
-            <button class="portfolio-media" type="button" data-caption="Một người bạn nhỏ, một bó hoa nhỏ." aria-label="Xem ảnh: Một người bạn nhỏ">
+            <button class="portfolio-media" type="button" aria-label="Xem ảnh">
               <img src="assets/photos/cat-bouquet.jpg" alt="Mèo nhỏ ôm bó hoa" loading="lazy" decoding="async">
               <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
             </button>
-            <div class="portfolio-meta">
-              <p class="portfolio-category">Frame 03</p>
-              <h3 class="portfolio-title">Một người bạn nhỏ</h3>
-              <p class="portfolio-tags"><span>Cat</span><span>20.10</span></p>
-            </div>
           </article>
           <article class="portfolio-item reveal-up">
-            <button class="portfolio-media portfolio-media-fit" type="button" data-caption="Một ngày 20/10 thật dịu dàng." aria-label="Xem ảnh: Một ngày 20/10">
+            <button class="portfolio-media portfolio-media-fit" type="button" aria-label="Xem ảnh">
               <img src="assets/photos/teacher-flowers.jpg" alt="Cô gái áo xanh bên bó hoa trước bảng lớp" loading="lazy" decoding="async">
               <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
             </button>
-            <div class="portfolio-meta">
-              <p class="portfolio-category">Frame 04</p>
-              <h3 class="portfolio-title">Một ngày 20/10</h3>
-              <p class="portfolio-tags"><span>Bó hoa</span><span>Dịu dàng</span></p>
-            </div>
           </article>
           <article class="portfolio-item reveal-up">
-            <button class="portfolio-media portfolio-media-fit" type="button" data-caption="Một buổi chiều cùng bạn nhỏ." aria-label="Xem ảnh: Cùng bạn nhỏ">
+            <button class="portfolio-media portfolio-media-fit" type="button" aria-label="Xem ảnh">
               <img src="assets/photos/rabbit-feeding.jpg" alt="Cô gái cho thỏ ăn trong vườn" loading="lazy" decoding="async">
               <span class="portfolio-view" aria-hidden="true"><span>Xem ảnh</span></span>
             </button>
-            <div class="portfolio-meta">
-              <p class="portfolio-category">Frame 05</p>
-              <h3 class="portfolio-title">Cùng bạn nhỏ</h3>
-              <p class="portfolio-tags"><span>Rabbit</span><span>Bình yên</span></p>
-            </div>
           </article>
         </div>
       </div>
@@ -348,13 +323,14 @@
 
   <button class="sound-toggle" id="soundToggle" type="button" aria-label="Bật hoặc tắt nhạc" aria-pressed="false">♫ <span>Nhạc: tắt</span></button>
   <audio id="bgMusic" preload="metadata">
+    <source src="assets/audio/harvey.webm" type="audio/webm">
+    <source src="assets/audio/harvey.m4a" type="audio/mp4">
     <source src="assets/audio/music.webm" type="audio/webm">
   </audio>
 
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Xem ảnh">
     <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Đóng ảnh">×</button>
     <img id="lightboxImage" alt="Ảnh phóng to">
-    <p id="lightboxCaption"></p>
   </div>
 
   <div class="petal-cinema" id="petalCinema" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="cinemaHiddenTitle">
