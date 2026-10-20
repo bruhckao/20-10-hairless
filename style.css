@@ -636,7 +636,7 @@ button {
 }
 
 .portfolio-meta {
-  padding-top: 20px;
+  display: none !important;
 }
 
 .portfolio-category {

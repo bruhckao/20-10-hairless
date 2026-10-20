@@ -282,11 +282,12 @@ let questionIndex = 0;
 let isChangingQuestion = false;
 
 function updateQuestionView({ focus = false } = {}) {
+  if (!questionText || !questionAnswer || !questionProgress || !questionMeter) return;
   questionText.textContent = questionTexts[questionIndex];
   questionAnswer.value = answers[questionIndex];
   questionProgress.textContent = `Câu ${questionIndex + 1}/${questionTexts.length}`;
   questionMeter.style.width = `${((questionIndex + 1) / questionTexts.length) * 100}%`;
-  backBtn.hidden = questionIndex === 0;
+  if (backBtn) backBtn.hidden = questionIndex === 0;
 
   if (focus) {
     questionAnswer.focus({ preventScroll: true });
@@ -295,12 +296,12 @@ function updateQuestionView({ focus = false } = {}) {
 
 function showUpdatedQuestion() {
   updateQuestionView({ focus: true });
-  questionBody.classList.remove('is-changing');
+  if (questionBody) questionBody.classList.remove('is-changing');
   isChangingQuestion = false;
 }
 
 function changeQuestion(direction) {
-  if (isChangingQuestion) return;
+  if (isChangingQuestion || !questionAnswer) return;
 
   const nextIndex = questionIndex + direction;
   if (nextIndex < 0 || nextIndex >= questionTexts.length) return;
@@ -314,12 +315,12 @@ function changeQuestion(direction) {
   }
 
   isChangingQuestion = true;
-  questionBody.classList.add('is-changing');
+  if (questionBody) questionBody.classList.add('is-changing');
   window.setTimeout(showUpdatedQuestion, 360);
 }
 
 function finishQuestions() {
-  answers[questionIndex] = questionAnswer.value;
+  if (questionAnswer) answers[questionIndex] = questionAnswer.value;
 
   const thankYou = document.getElementById('thank-you');
   const thankYouTitle = document.getElementById('thankYouTitle');
@@ -340,7 +341,7 @@ function finishQuestions() {
 function goForward() {
   if (isChangingQuestion) return;
 
-  answers[questionIndex] = questionAnswer.value;
+  if (questionAnswer) answers[questionIndex] = questionAnswer.value;
 
   if (questionIndex === questionTexts.length - 1) {
     finishQuestions();
@@ -349,33 +350,42 @@ function goForward() {
   }
 }
 
-questionAnswer.addEventListener('input', () => {
-  answers[questionIndex] = questionAnswer.value;
-});
-
-nextBtn.addEventListener('click', goForward);
-skipBtn.addEventListener('click', goForward);
-backBtn.addEventListener('click', () => changeQuestion(-1));
-
-document.getElementById('restartBtn').addEventListener('click', () => {
-  questionIndex = 0;
-  isChangingQuestion = false;
-  questionBody.classList.remove('is-changing');
-  updateQuestionView();
-  resetEnding();
-
-  const brand = document.querySelector('.nav .brand');
-  if (brand) {
-    window.setTimeout(() => brand.focus({ preventScroll: true }), 0);
-  }
-
-  window.scrollTo({
-    top: 0,
-    behavior: reduceMotion.matches ? 'auto' : 'smooth'
+if (questionAnswer) {
+  questionAnswer.addEventListener('input', () => {
+    answers[questionIndex] = questionAnswer.value;
   });
-});
+}
 
-updateQuestionView();
+if (nextBtn) nextBtn.addEventListener('click', goForward);
+if (skipBtn) skipBtn.addEventListener('click', goForward);
+if (backBtn) backBtn.addEventListener('click', () => changeQuestion(-1));
+
+const restartBtn = document.getElementById('restartBtn');
+if (restartBtn) {
+  restartBtn.addEventListener('click', () => {
+    if (questionBody) {
+      questionIndex = 0;
+      isChangingQuestion = false;
+      questionBody.classList.remove('is-changing');
+      updateQuestionView();
+    }
+    resetEnding();
+
+    const brand = document.querySelector('.nav .brand');
+    if (brand) {
+      window.setTimeout(() => brand.focus({ preventScroll: true }), 0);
+    }
+
+    window.scrollTo({
+      top: 0,
+      behavior: reduceMotion.matches ? 'auto' : 'smooth'
+    });
+  });
+}
+
+if (questionText) {
+  updateQuestionView();
+}
 
 // Cinematic gallery — A Rain of Petals & Wishes.
 const cinema = document.getElementById('petalCinema');
@@ -393,24 +403,24 @@ const closeCinemaButton = document.getElementById('closeCinema');
 const replayCinemaButton = document.getElementById('replayCinema');
 
 let cinemaWishTexts = [
-  'Chúc Tin ngày 20/10 thật vui vẻ và ngập tràn những điều tốt đẹp.',
-  'Mong Tin lúc nào cũng vui vẻ, tươi tắn và luôn giữ nụ cười thật xinh.',
-  'Chúc những điều dịu dàng nhất sẽ luôn tìm đến với Tin.',
-  'Mong mỗi ngày của Tin đều có thật nhiều lý do để mỉm cười.',
-  'Chúc Tin luôn tự tin, rạng rỡ và làm được những điều mình yêu thích.',
+  'Chúc Thủy Tiên ngày 20/10 thật vui vẻ và ngập tràn những điều tốt đẹp.',
+  'Mong Thủy Tiên lúc nào cũng vui vẻ, tươi tắn và luôn giữ nụ cười thật xinh.',
+  'Chúc những điều dịu dàng nhất sẽ luôn tìm đến với Thủy Tiên.',
+  'Mong mỗi ngày của Thủy Tiên đều có thật nhiều lý do để mỉm cười.',
+  'Chúc Thủy Tiên luôn tự tin, rạng rỡ và làm được những điều mình yêu thích.',
   'Mong những mệt mỏi sẽ qua nhanh, còn niềm vui thì ở lại thật lâu.',
-  'Hy vọng hôm nay Tin nhận được thật nhiều niềm vui và những bất ngờ đáng yêu.',
-  'Chúc Tin có một ngày 20/10 thật đặc biệt, theo cách riêng của mình.',
-  'Mong Tin luôn được yêu thương, trân trọng và đối xử bằng tất cả sự chân thành.',
-  'Hãy luôn là một người bạn vui vẻ, tươi tắn và đặc biệt theo cách của riêng Tin nhé.'
+  'Hy vọng hôm nay Thủy Tiên nhận được thật nhiều niềm vui và những bất ngờ đáng yêu.',
+  'Chúc Thủy Tiên có một ngày 20/10 thật đặc biệt, theo cách riêng của mình.',
+  'Mong Thủy Tiên luôn được yêu thương, trân trọng và đối xử bằng tất cả sự chân thành.',
+  'Hãy luôn là một người bạn vui vẻ, tươi tắn và đặc biệt theo cách của riêng Thủy Tiên nhé.'
 ];
 
 let cinemaPhotos = [
-  { src: 'assets/photos/teacher-flowers.jpg', alt: 'Một ngày 20/10', caption: 'một ngày 20/10' },
-  { src: 'assets/photos/green-dress.jpg', alt: 'Khung hình xanh', caption: 'một khung hình xanh' },
-  { src: 'assets/photos/boat.jpg', alt: 'Bên hồ', caption: 'một chút nắng' },
-  { src: 'assets/photos/cat-bouquet.jpg', alt: 'Mèo nhỏ ôm bó hoa', caption: 'một người bạn nhỏ' },
-  { src: 'assets/photos/rabbit-feeding.jpg', alt: 'Cùng bạn nhỏ', caption: 'cùng bạn nhỏ' }
+  { src: 'assets/photos/thuy-tien/thuy-tien-1.jpg', alt: 'Ảnh của Thủy Tiên', caption: '' },
+  { src: 'assets/photos/thuy-tien/thuy-tien-2.jpg', alt: 'Ảnh của Thủy Tiên', caption: '' },
+  { src: 'assets/photos/thuy-tien/thuy-tien-3.jpg', alt: 'Ảnh của Thủy Tiên', caption: '' },
+  { src: 'assets/photos/thuy-tien/thuy-tien-4.jpg', alt: 'Ảnh của Thủy Tiên', caption: '' },
+  { src: 'assets/photos/thuy-tien/thuy-tien-5.jpg', alt: 'Ảnh của Thủy Tiên', caption: '' }
 ];
 
 const cinemaPetalColors = ['#f2856d', '#f79f88', '#fabca9', '#fde5dc', '#db5839', '#f9aa93', '#fff0e8'];
@@ -1464,7 +1474,7 @@ function startEndingRain(mode) {
   setEndingRainMode(mode);
 }
 
-let bouquetPhotos = cinemaPhotos.filter(photo => photo.src.indexOf('cat-bouquet') === -1);
+let bouquetPhotos = cinemaPhotos.slice();
 
 function createPetalFlight(finalRot) {
   const roll = Math.random();
@@ -1493,10 +1503,11 @@ function buildBouquetPetals() {
   bouquetPetals.replaceChildren();
 
   const imagePositions = {
-    'teacher-flowers.jpg': '50% 22%',
-    'green-dress.jpg': '50% 27%',
-    'boat.jpg': '50% 28%',
-    'rabbit-feeding.jpg': '50% 14%'
+    'thuy-tien-1.jpg': '50% 30%',
+    'thuy-tien-2.jpg': '50% 25%',
+    'thuy-tien-3.jpg': '50% 30%',
+    'thuy-tien-4.jpg': '50% 25%',
+    'thuy-tien-5.jpg': '50% 30%'
   };
 
   function addPetal(image, layout) {
